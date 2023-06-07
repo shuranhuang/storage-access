@@ -147,7 +147,7 @@ partial interface Document {
 };
 </pre>
 
-Let |get unpartitioned cookie enabled state| be an algorithm that, given {{Document}} |doc| and [=cookie store=], runs the following steps:
+To <dfn>get unpartitioned cookies enabled state</dfn>, given a {{Document}} |doc|, run the following steps:
 1. Let |global| be |doc|'s [=relevant global object=].
 1. Let |cookie enabled state| be the result of [=queuing a global task=] on the [=cookie store=] with |global|'s [=environment/has storage access=].
 1. Return |cookie enabled state|
