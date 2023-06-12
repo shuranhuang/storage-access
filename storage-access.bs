@@ -191,7 +191,7 @@ When invoked on {{Document}} |doc|, the <dfn export method for=Document><code>re
 
 1. If |doc|'s [=active sandboxing flag set=] has its [=sandbox storage access by user activation flag=] set, [=/reject=] |p| with a "{{NotAllowedError}}" {{DOMException}} and return |p|.
 1. If |global|'s [=environment/has storage access=] is true, [=/resolve=] and return |p|.
-1. If the result of |get unpartitioned cookie enabled state| is true,, [=/resolve=] and return |p|.
+1. If the result of |get unpartitioned cookie enabled state| is true, [=/resolve=] and return |p|.
 1. Let |has transient activation| be whether |doc|'s {{Window}} object has [=transient activation=].
 1. Run the following steps [=in parallel=]:
     1. Let |process permission state| be an algorithm that, given a [=permission state=] |state|, runs the following steps:
